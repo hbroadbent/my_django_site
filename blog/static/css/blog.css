@@ -1,0 +1,18 @@
+.page-header {
+    background: ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+ .page-header h1, .page-header h1 a{
+   color: #FFFFFF;
+   font-size: 36pt;
+   text-decoration: none;
+ }
+
+ .page-form-blog textarea {
+   width:100%;
+}
+
+.post-form-blog .btn-primary {
+  float: right;
+}
