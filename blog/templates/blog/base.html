@@ -9,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://kit.fontawesome.com/7da09b3ebc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
 
 <div class="page-header">
-    <h1><a href="{% url "post_list" %}">Syncove Blog</a> </h1>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <h1><a href="{% url 'post_list' %}">Syncove Blog</a> </h1>
 </div>
 
 <div class="content container">
