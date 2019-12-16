@@ -14,4 +14,9 @@ urlpatterns = [
     # http://127.0.0.1:8000/post/2/edit --> local
     path('post/<int:pk>/', views.post_edit, name='post_edit'),
 
+    # http://127.0.0.1:8000/post/2/edit --> local
+    path('drafts/', views.post_draft_list, name='post_draft'),
+
+    # http://127.0.0.1:8000/post/2/edit --> local
+    path('post/<int:pk>/publish', views.post_publish, name='post_publish'),
 ]
