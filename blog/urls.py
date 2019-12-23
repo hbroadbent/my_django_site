@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-from django.contrib.auth.views import LoginView
 
 
 urlpatterns = [
@@ -21,7 +20,4 @@ urlpatterns = [
 
     # http://127.0.0.1:8000/post/2/edit --> local
     path('post/<int:pk>/publish', views.post_publish, name='post_publish'),
-
-    # http://127.0.0.1:8000/accounts/login/ --> local
-    path('accounts/login/', LoginView.as_view(), name='login'),
 ]
